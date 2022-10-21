@@ -1,0 +1,51 @@
+class bike:
+    def __init__(self,wheels,headlight,body,jumps):
+        self.wheels=wheels
+        self.headlight=headlight
+        self.body=body
+        self.jumps=jumps
+    def bikecustomization(self):
+        print("the bike according to your preference is:", self.wheels,self.headlight,self.body,self.jumps)
+
+    def get_wheels(self):        
+        if self.wheels==1:
+            print("soft")
+        else: 
+            print("hard")
+
+    def get_headlight(self):
+        if self.headlight==1:
+            print("big")
+        else:
+            print("small")
+
+    def get_body(self):
+        if self.body==1:
+            print("the body shilud be of metal")
+        else:
+            print("the body should be of fiber")
+
+    def get_jumps(self):
+        if self.jumps==1:
+            print("yes i want jumps")
+        else:
+            print("no,i don't want jumps")
+    
+print("press 1 for hard wheels and 0 for soft wheels: ")    
+wheels=input("what type of wheel would you like? ")
+print("press 1 for big headlights and 0 for small headlights")             
+headlight=input("what type pf headlights would you like: ")    
+print("press 1 for metal body and 0 for fiber body")
+body=input("what king of body do you want: ")    
+print("press 1 for yes and 0 for no jumps")
+jumps=input("do you want jumps in your bike: ")    
+    
+   
+ob1=bike(wheels,headlight,body,jumps)
+ob1.bikecustomization()
+print(" ")
+print("which is? ")
+ob1.get_wheels()
+ob1.get_headlight()
+ob1.get_body()
+ob1.get_jumps()
